@@ -1,2 +1,1 @@
-# Linux_Roadmap
-Zum Lernen
+# Homelab Roadmap und Learning
