@@ -1,1 +1,6 @@
-#habe folgende idee vor: Nextcloud auf dem mini pc hosten, ggf. mit docker (und portainer?) . Momentane situation: intek nuc mit ubuntu server bereits installiet (nur ssh eingerichtet) und einer externen 1 tb ssd. nuc ist an einer kleinen tp link switch welches mit einer poweline verbunden ist. Router ist im keller, ein epeedport 3 von telekom. 
+habe folgende idee vor: 
+Nextcloud auf dem mini pc hosten, ggf. mit docker (und portainer?) . 
+Momentane situation: intel nuc mit ubuntu server bereits installiet (nur ssh eingerichtet) und einer externen 1 tb ssd. 
+nuc ist an einer kleinen tp link switch welches mit einer poweline verbunden ist. Router ist im keller, ein epeedport 3 von telekom. 
+Nextcloud soll auch von außerhalb erreicht werden. 
+Bitt erkläre kurz was die einzelnen befehle und schritte machen. 
