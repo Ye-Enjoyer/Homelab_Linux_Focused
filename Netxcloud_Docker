@@ -4,3 +4,99 @@ Momentane situation: intel nuc mit ubuntu server bereits installiet (nur ssh ein
 nuc ist an einer kleinen tp link switch welches mit einer poweline verbunden ist. Router ist im keller, ein epeedport 3 von telekom. 
 Nextcloud soll auch von außerhalb erreicht werden. 
 Bitt erkläre kurz was die einzelnen befehle und schritte machen. 
+
+
+#Paket liste aktualisieren
+sudo apt update && sudo apt upgrade
+
+
+#Installieren Dokcer und Docker Compose
+sudo apt install docker.io docker-compose
+
+
+#Starte Docker und nach jedem Reboot ausotmatisch 
+sudo systemctl enable docker --now
+
+
+#erstelle einen speicher bereich für portainer
+sudo docker volume create portainer_data
+
+
+#Starte den Portainer-Container:
+
+#-d: im Hintergrund laufen lassen
+
+#-p: Ports für Zugriff (9000 Webinterface, 8000 optional)
+
+#--restart=always: Container wird nach Neustart automatisch gestartet
+
+#Volumes: Docker-Socket und Speicherort
+
+#→ Danach: Portainer ist über http://<IP-des-NUC>:9000 erreichbar
+
+
+sudo docker run -d -p 9000:9000 -p 8000:8000 \
+    --name portainer \
+    --restart=always \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v portainer_data:/data \
+    portainer/portainer-ce
+
+
+#Externe SSD ausfindig machen
+lsblk
+
+
+#SSD Mounten
+sudo mkdir /mnt/ssd
+sudo mount /dev/sdb1 /mnt/ssd
+
+
+#Nextcloud verzeichniss erstellen und dorthin wechseln
+mkdir ~/nextcloud && cd ~/nextcloud
+
+
+#Yaml erstellen 
+nano docker-compose.yml
+
+
+#Inhalt
+version: '3'
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=strong-root-password
+      - MYSQL_PASSWORD=nextcloud
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+
+  app:
+    image: nextcloud
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - nextcloud:/var/www/html
+      - /mnt/ssd/nextcloud_data:/var/www/html/data
+    environment:
+      - MYSQL_PASSWORD=nextcloud
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_HOST=db
+
+volumes:
+  db:
+  nextcloud:
+
+
+
+
+#Nextcloud Starten
+sudo docker-compose up -d
+
