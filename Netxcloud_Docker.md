@@ -238,8 +238,46 @@ sudo docker run --rm \
 
 ---
 
-##Zugriff via: [https://bataraycloud.duckdns.org](https://bataraycloud.duckdns.org)
+## 11. Trusted Domains konfigurieren
+
+Wenn beim Aufruf der Nextcloud-URL die Fehlermeldung "Access through untrusted domain" erscheint, muss die Domain manuell eingetragen werden:
+
+Zugriff auf den Container:
+
+```bash
+sudo docker exec -it nextcloud_app_1 bash
+```
+
+Bearbeiten der Konfigurationsdatei:
+
+```bash
+vi /var/www/html/config/config.php
+```
+
+Im Array `trusted_domains` die DuckDNS-Domain ergänzen:
+
+```php
+  'trusted_domains' =>
+  array (
+    0 => 'localhost',
+    1 => '192.168.2.121',
+    2 => 'bataraycloud.duckdns.org',
+  ),
+```
+
+Datei speichern und den Container verlassen. Die Änderungen greifen sofort.
 
 ---
 
-Letzter Test: Smartphone im mobilen Netz → [https://bataraycloud.duckdns.org](https://bataraycloud.duckdns.org) sollte erreichbar sein.
+## Zugriff testen
+
+* Browser auf beliebigem Gerät: [https://bataraycloud.duckdns.org](https://bataraycloud.duckdns.org)
+* Mobile Daten nutzen zur Prüfung externer Erreichbarkeit
+
+---
+
+## Optionale Sicherheit
+
+* SSH absichern (z. B. Port ändern, Public-Key-Auth)
+* UFW aktivieren und nur Ports 22, 80, 443 freigeben
+* Fail2Ban installieren
