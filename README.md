@@ -16,6 +16,29 @@ Dieses Repository dient der Dokumentation eines privaten Homeservers auf Basis e
   - Server über LAN an TP-Link Switch
   - Switch angebunden per Powerline an Router im Keller
   - Zugriff über das lokale Netzwerk (Headless-Betrieb)
+ 
+## Netzwerkübersicht
+
+Der Homeserver (Intel NUC) und der Client-PC befinden sich im selben Raum und sind über Powerline mit dem Router im Keller verbunden. Beide Geräte befinden sich im lokalen Subnetz `192.168.2.0/24`.
+
+
+                    [Router] (Keller)
+                 IP: 192.168.2.1/24
+                        │
+           ┌────────────┴────────────┐
+           │     Stromnetz (LAN)     │
+           └────────────┬────────────┘
+              [Powerline Verbindung]
+                        │
+                [Powerline Adapter]
+                        │
+           Standort: Zimmer (lokales Netzwerk)
+           ┌────────────┴────────────┐
+           │                         │
+     [Client-PC]               [Intel NUC]
+     IP: 192.168.2.132/24       IP: 192.168.2.173/24
+                                SSH: Port 22 offen
+
 
 ## Dokumentierte Komponenten
 
