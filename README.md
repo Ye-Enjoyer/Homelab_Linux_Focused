@@ -59,4 +59,5 @@ Enthaltene Schritte:
 .
 ├── README.md           # Projektübersicht und Zielbeschreibung
 ├── ssh-setup.md        # Detaillierte Anleitung zur SSH-Einrichtung
+├── nextcloud-docker.md # Nextcloud setup Anleitung
 └── weitere Dateien     # folgen mit zunehmendem Ausbau
