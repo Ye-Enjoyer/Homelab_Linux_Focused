@@ -60,4 +60,5 @@ Enthaltene Schritte:
 ├── README.md           # Projektübersicht und Zielbeschreibung
 ├── ssh-setup.md        # Detaillierte Anleitung zur SSH-Einrichtung
 ├── nextcloud-docker.md # Nextcloud setup Anleitung
+├── caddy-reverse-proxy.md # Doku einrichtung des proxy, Nextcloud von außen erreichen
 └── weitere Dateien     # folgen mit zunehmendem Ausbau
