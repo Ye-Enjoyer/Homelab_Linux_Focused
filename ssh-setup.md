@@ -151,3 +151,4 @@ sudo ufw status
 * Platzhalter wie `<benutzername>` und `<server-ip>` müssen vor dem Ausführen ersetzt werden.
 * SSH-Zugang sollte zuerst mit aktivem Passwort-Login getestet werden.
 * Bei Verbindungsproblemen: lokale Verbindung prüfen, IP-Adresse kontrollieren, Logdateien einsehen (`journalctl -u ssh`).
+* Authenticaton-Key irgendwo absichern (z.b. USB-Stick)
