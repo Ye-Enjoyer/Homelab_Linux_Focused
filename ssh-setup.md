@@ -1,4 +1,3 @@
-````markdown
 # SSH-Zugang auf einem Ubuntu Server (barebones) einrichten
 
 Diese Anleitung beschreibt die Einrichtung eines sicheren SSH-Zugangs mit Schlüssel-Authentifizierung auf einem frisch installierten Ubuntu Server ohne vorinstallierte Werkzeuge.
