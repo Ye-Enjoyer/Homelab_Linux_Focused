@@ -137,3 +137,17 @@ https://bataraycloud.duckdns.org
 * `overwriteprotocol` nicht gesetzt
 * `trusted_proxies` fehlt
 * App-Cookies blockiert durch Reverse Proxy
+
+
+## Was macht Caddy?
+
+Caddy ist ein Webserver, der als Reverse Proxy vor Nextcloud sitzt. Das bedeutet, er nimmt Anfragen aus dem Internet entgegen und leitet sie an den internen Nextcloud-Container weiter.
+
+Dabei kümmert sich Caddy automatisch um HTTPS-Verschlüsselung über Let's Encrypt. Es ist keine manuelle Zertifikatsverwaltung notwendig.
+
+Durch das Setzen spezieller HTTP-Header teilt Caddy Nextcloud mit, dass die Anfrage ursprünglich über HTTPS kam und von außen stammt. So funktioniert der Login korrekt, und es kommt nicht zu Weiterleitungsfehlern oder abgelehnten Verbindungen.
+
+Caddy erkennt automatisch die konfigurierte Domain (z. B. bataraycloud.duckdns.org) und sorgt dafür, dass alle Zugriffe dorthin beim richtigen Container landen.
+
+Insgesamt macht Caddy den Zugriff auf Nextcloud über das Internet einfach, sicher und wartungsarm.
+
