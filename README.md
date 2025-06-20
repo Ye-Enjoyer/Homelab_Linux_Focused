@@ -58,6 +58,7 @@ Enthaltene Schritte:
 ```plaintext
 .
 ├── README.md               # Projektübersicht und Zielbeschreibung
+├── auto-updates.md         # Automatisierte Wartung/Updates
 ├── ssh-setup.md            # Detaillierte Anleitung zur SSH-Einrichtung
 ├── nextcloud-docker.md     # Nextcloud setup mit Docker
 ├── caddy-reverse-proxy.md  # einrichtung des reverse-proxy um Nextcloud von außen zu erreichen (Docker)
