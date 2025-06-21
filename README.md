@@ -44,7 +44,7 @@ Der Homeserver (Intel NUC) und der Client-PC befinden sich im selben Raum und si
 
 ### SSH-Zugang
 
-Die Einrichtung des SSH-Zugangs mit Schlüssel-Authentifizierung ist im Detail in [`ssh_setup.md`](./ssh_setup.md) dokumentiert. SSH sollte immer der erste dienst sein der eingerichtet wird.
+Die Einrichtung des SSH-Zugangs mit Schlüssel-Authentifizierung ist im Detail in [`01_ssh_setup.md`](./01_ssh_setup.md) dokumentiert. SSH sollte immer der erste dienst sein der eingerichtet wird.
 
 Enthaltene Schritte:
 - Installation des OpenSSH-Servers
