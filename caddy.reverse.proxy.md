@@ -105,34 +105,30 @@ docker exec -u 33 -it nextcloud-app php occ config:system:set overwriteprotocol 
 ### 4.3 Reverse Proxy IP als vertrauenswürdig markieren (laut `docker network inspect`):
 
 ```bash
-docker exec -u 33 -it nextcloud-app php occ config:system:set trusted_proxies 0 --value=172.19.0.2
+docker exec -u 33 -it nextcloud-app php occ config:system:set trusted_proxies 0 --value=172.19.0.2 #Ggf. Ip-adresse anpassen
 ```
 
 ---
 
 ## 5. Zugriff testen
 
-Auf einem externen Gerät (z. B. Smartphone ohne WLAN):
+Auf einem externen Gerät Zugriff testen:
 
 ```
 https://bataraycloud.duckdns.org
 ```
 
-* ✔ Login-Seite erscheint
-* ✔ Keine Weiterleitungsprobleme
-* ✔ App-Anmeldung funktioniert
-
 ---
 
 ## Troubleshooting
 
-### ❌ `502 Bad Gateway`
+### `502 Bad Gateway`
 
 * Nextcloud nicht im `nextcloud-net`
 * Container-Namen falsch
 * Caddy kann Nextcloud nicht auf Port 80 erreichen
 
-### ❌ Login-Seite lädt ewig, bleibt hängen:
+### Login-Seite lädt ewig, bleibt hängen:
 
 * `overwriteprotocol` nicht gesetzt
 * `trusted_proxies` fehlt
