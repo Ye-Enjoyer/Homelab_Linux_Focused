@@ -3,7 +3,7 @@
 
 # Nextcloud mit Docker auf Ubuntu Server hosten
 
-Diese Anleitung beschreibt, wie Nextcloud auf einem Ubuntu-Server mithilfe von Docker und Docker Compose installiert wird. Die Daten werden auf einer externen, als ext4 formatierte SSD gespeichert, die dauerhaft unter `/mnt/nextcloud-data` eingebunden ist.
+Diese Anleitung beschreibt, wie Nextcloud auf einem Ubuntu-Server mithilfe von Docker und Docker Compose installiert wird. Die Daten werden in diesem Fall auf einer externen, als ext4 formatierte SSD gespeichert, die dauerhaft unter `/mnt/nextcloud-data` eingebunden ist.
 
 ## Voraussetzungen
 
@@ -96,7 +96,7 @@ Die Container werden im Hintergrund gestartet.
 Öffne im lokalen Netzwerk:
 
 ```
-http://192.168.2.173:8080
+http://192.168.2.173:8080 #Ggf. Ip-adresse ändern
 ```
 
 ### Einrichtung:
