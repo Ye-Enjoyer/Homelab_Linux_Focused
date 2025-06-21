@@ -58,9 +58,9 @@ Enthaltene Schritte:
 ```plaintext
 .
 ├── README.md                         # Projektübersicht und Zielbeschreibung
-├── ssh-setup.md                      # Detaillierte Anleitung zur SSH-Einrichtung und ufw Install
-├── auto-updates.md                   # Automatisierte Wartung/Updates
+├── ssh_setup.md                      # Detaillierte Anleitung zur SSH-Einrichtung und ufw Install
+├── auto_updates.md                   # Automatisierte Wartung/Updates
 ├── docker_docker-compose_setup.md    # Docker/Docker-Compose Installation
-├── nextcloud-docker.md               # Nextcloud setup mit Docker
-├── caddy-reverse-proxy.md            # einrichtung des reverse-proxy um Nextcloud von außen zu erreichen (Docker)
+├── nextcloud_docker.md               # Nextcloud setup mit Docker
+├── caddy_reverse_proxy.md            # Einrichtung des reverse-proxy um Nextcloud von außen zu erreichen (Docker)
 └── tbd
