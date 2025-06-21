@@ -19,7 +19,7 @@ sudo apt install unattended-upgrades
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 ```
 
-> Bestätigen mit "Ja" – dies aktiviert Sicherheitsupdates automatisch.
+> Bestätigen mit "yes" – dies aktiviert Sicherheitsupdates automatisch.
 
 ---
 
@@ -71,7 +71,7 @@ Unattended-Upgrade::Package-Blacklist {
 };
 ```
 
-Nur nötig, wenn bestimmte Pakete explizit ausgeschlossen werden sollen.
+Nur nötig, falls bestimmte Pakete explizit ausgeschlossen werden sollen.
 
 ---
 
@@ -107,5 +107,5 @@ sudo unattended-upgrade --dry-run --debug
 
 * Täglich werden neue Paketlisten geladen und Updates heruntergeladen
 * Sicherheitsupdates und normale Updates werden automatisch installiert
-* Du musst **nicht mehr manuell `apt update && apt upgrade` ausführen**
+* man muss **nicht mehr manuell `apt update && apt upgrade` ausführen**
 * Neustarts sind nur bei bestimmten Systempaketen notwendig (z. B. nach Kernel-Update)
