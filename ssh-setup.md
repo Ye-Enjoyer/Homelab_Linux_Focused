@@ -8,7 +8,7 @@ Diese Anleitung beschreibt die Einrichtung eines sicheren SSH-Zugangs mit Schlü
 - Zugriff auf den Server über Tastatur und Bildschirm
 - Ein Benutzerkonto mit `sudo`-Rechten existiert
 - Der Server ist mit dem lokalen Netzwerk verbunden
-- Ein SSH-Client steht auf einem anderen Rechner bereit (Linux)
+- Ein SSH-Client steht auf einem anderen Rechner bereit 
 
 ## 1. SSH-Server installieren
 
@@ -38,7 +38,7 @@ Oder:
 hostname -I
 ```
 
-Notiere die IP-Adresse des Servers, z. B. `192.168.178.45`. Diese wird im weiteren Verlauf benötigt.
+Notiere ggf. die IP-Adresse des Servers.
 
 ## 3. SSH-Schlüsselpaar auf dem Client erzeugen
 
@@ -49,22 +49,22 @@ ssh-keygen -t ed25519 -C "heimserver"
 ```
 
 * Der Standardpfad `~/.ssh/id_ed25519` kann übernommen werden.
-* Eine Passphrase ist optional, wird aber empfohlen.
+* Passphrase ist optional.
+* "ed25519" kann beim keygen Befehl geändert werden. 
 
 ## 4. Öffentlichen Schlüssel auf den Server übertragen
 
 ### Variante A – Mit `ssh-copy-id` (wenn auf dem Client verfügbar)
 
 ```bash
-ssh-copy-id <benutzername>@<server-ip>
+ssh-copy-id <benutzername>@<server-ip/Hostname>
 ```
 
 **Hinweis:**
 
-* `<benutzername>` = Benutzername des Servers (z. B. `admin`, `ubuntu`, o. Ä.)
-* `<server-ip>` = IP-Adresse aus Schritt 2 (z. B. `192.168.178.45`)
+* `<benutzername>` = Benutzername des Servers 
+* `<server-ip>` = IP-Adresse aus Schritt 2 (z. B. `192.168.178.45`) oder Hostnamen nehmen
 
-→ Diese Werte müssen ersetzt werden. Kein direktes Copy-Paste möglich.
 
 ### Variante B – Manuell
 
