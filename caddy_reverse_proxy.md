@@ -1,5 +1,3 @@
-## 📄 `caddy-reverse-proxy.md`
-
 # Caddy als Reverse Proxy für Nextcloud (Docker-basiert)
 
 Diese Anleitung beschreibt die Einrichtung von **Caddy als Reverse Proxy** für eine lokal gehostete Nextcloud-Instanz, um diese über eine öffentliche Domain (z. B. via DuckDNS) mit **automatischem HTTPS** erreichbar zu machen.
