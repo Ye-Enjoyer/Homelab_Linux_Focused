@@ -1,6 +1,6 @@
 # Home Server Setup – Dokumentation
 
-Dieses Repository dient der Dokumentation eines privaten Homeservers auf Basis eines Intel NUC mit Ubuntu Server (barebones). Ziel ist es, eine stabile, nachvollziehbar aufgebaute Umgebung für selbst gehostete Anwendungen zu schaffen. Alle Konfigurationen und Schritte werden hier versioniert dokumentiert.
+Diese Dokumentation ist für ein privaten Homeserver auf Basis eines Intel NUC mit Ubuntu Server (barebones). Ziel ist es, eine stabile, nachvollziehbar aufgebaute Umgebung für selbst gehostete Anwendungen zu schaffen. Alle Konfigurationen und Schritte werden hier versioniert dokumentiert.
 
 ## Ziel
 
@@ -44,7 +44,7 @@ Der Homeserver (Intel NUC) und der Client-PC befinden sich im selben Raum und si
 
 ### SSH-Zugang
 
-Die Einrichtung eines sicheren SSH-Zugangs mit Schlüssel-Authentifizierung ist im Detail in [`ssh-setup.md`](./ssh-setup.md) dokumentiert.
+Die Einrichtung des SSH-Zugangs mit Schlüssel-Authentifizierung ist im Detail in [`ssh-setup.md`](./ssh-setup.md) dokumentiert. SSH sollte immer der erste dienst sein der eingerichtet wird.
 
 Enthaltene Schritte:
 - Installation des OpenSSH-Servers
