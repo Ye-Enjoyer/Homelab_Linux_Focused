@@ -63,14 +63,14 @@ sudo ufw default allow outgoing
 sudo ufw default deny routed
 
 # SSH nur intern erlaubt
-sudo ufw allow from 192.168.178.0/24 to any port 22 proto tcp
+sudo ufw allow from 1.1.1.1 to any port 22 proto tcp #Ip-ändern
 
 # HTTP/HTTPS öffentlich (für Caddy/Nextcloud)
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 
 # Netdata nur intern erreichbar
-sudo ufw allow from 192.168.178.0/24 to any port 19999 proto tcp
+sudo ufw allow from 1.1.1.1 to any port 19999 proto tcp #Ip-ändern
 
 # Aktivieren & Logging
 sudo ufw logging on
@@ -82,7 +82,7 @@ sudo ufw enable
 
 ```plaintext
 .
-├── README.md                         # Projektübersicht und Zielbeschreibung
+├── README.md                         # Projektübersicht und Zielbeschreibung, 
 ├── ssh_setup.md                      # Detaillierte Anleitung zur SSH-Einrichtung und ufw Install
 ├── auto_updates.md                   # Automatisierte Wartung/Updates
 ├── docker_docker-compose_setup.md    # Docker/Docker-Compose Installation
