@@ -63,4 +63,7 @@ Enthaltene Schritte:
 ├── docker_docker-compose_setup.md    # Docker/Docker-Compose Installation
 ├── nextcloud_docker.md               # Nextcloud setup mit Docker
 ├── caddy_reverse_proxy.md            # Einrichtung des reverse-proxy um Nextcloud von außen zu erreichen (Docker)
+├── fail2ban.md                       # für extra sicherheit, Setup und beispiele
+├── cron.md                           # Automatisierung für alles mögliche
+├── Netdata.md                        # Server-Monitoring, Einrichtung mit Docker beschrieben                      
 └── tbd
