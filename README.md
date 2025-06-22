@@ -53,7 +53,32 @@ Enthaltene Schritte:
 - Deaktivierung von Passwort-Login
 - Einrichtung einer Firewall mit UFW
 
-## Struktur des Repositories
+
+### UFW Firewall-Konfiguration (Stand 22. Juni 2025)
+
+```bash
+# Default-Regeln
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw default deny routed
+
+# SSH nur intern erlaubt
+sudo ufw allow from 192.168.178.0/24 to any port 22 proto tcp
+
+# HTTP/HTTPS öffentlich (für Caddy/Nextcloud)
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+
+# Netdata nur intern erreichbar
+sudo ufw allow from 192.168.178.0/24 to any port 19999 proto tcp
+
+# Aktivieren & Logging
+sudo ufw logging on
+sudo ufw enable
+
+  
+```
+# Struktur des Repositories
 
 ```plaintext
 .
