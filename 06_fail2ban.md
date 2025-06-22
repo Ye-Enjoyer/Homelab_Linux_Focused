@@ -1,6 +1,6 @@
-# SSH-Schutz mit Fail2Ban auf Ubuntu Server
+# Schutz mit Fail2Ban auf Ubuntu Server
 
-Diese Anleitung beschreibt die Einrichtung von [Fail2Ban](https://www.fail2ban.org/), um den SSH-Zugang des Servers automatisch vor Brute-Force-Angriffen zu schützen.
+Diese Anleitung beschreibt die Einrichtung von [Fail2Ban](https://www.fail2ban.org/), um den SSH-Zugang und andere Dienste des Servers automatisch vor Brute-Force-Angriffen zu schützen.
 
 ---
 
@@ -55,6 +55,7 @@ Erklärung:
 | `maxretry`  | Anzahl zulässiger Fehlversuche           |
 
 ---
+#Weitere Regeln können einfach untereinander aufgelistet werden (z.b. Nexcloud)
 
 ## Fail2Ban starten
 
