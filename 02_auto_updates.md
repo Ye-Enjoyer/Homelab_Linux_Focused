@@ -95,7 +95,7 @@ Die "1" bedeutet: Täglich ("0" = deaktiviert)
 
 ---
 
-### 6. Testlauf (optional)
+### 6. Testlauf 
 
 ```bash
 sudo unattended-upgrade --dry-run --debug
