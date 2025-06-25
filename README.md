@@ -88,7 +88,9 @@ sudo ufw enable
 ├── docker_docker-compose_setup.md    # Docker/Docker-Compose Installation
 ├── nextcloud_docker.md               # Nextcloud setup mit Docker
 ├── caddy_reverse_proxy.md            # Einrichtung des reverse-proxy um Nextcloud von außen zu erreichen (Docker)
-├── fail2ban.md                       # für extra sicherheit, Setup und beispiele
+├── fail2ban.md                       # Für extra sicherheit, Setup und beispiele
 ├── cron.md                           # Automatisierung für alles mögliche
-├── Netdata.md                        # Server-Monitoring, Einrichtung mit Docker beschrieben                      
+├── Netdata.md                        # Server-Monitoring, Einrichtung mit Docker beschrieben (nicht wirklich nötig)
+├── Romm.md                           # Host Retro games und lassen sich im Browser spielen
+├── glance.md                         # Dashboard für den server und leichtes Monitoring       
 └── tbd
