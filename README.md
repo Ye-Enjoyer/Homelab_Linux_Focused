@@ -90,7 +90,8 @@ sudo ufw enable
 ├── caddy_reverse_proxy.md            # Einrichtung des reverse-proxy um Nextcloud von außen zu erreichen (Docker)
 ├── fail2ban.md                       # Für extra sicherheit, Setup und beispiele
 ├── cron.md                           # Automatisierung für alles mögliche
-├── Netdata.md                        # Server-Monitoring, Einrichtung mit Docker beschrieben (nicht wirklich nötig)
-├── Romm.md                           # Host Retro games und lassen sich im Browser spielen
+├── netdata.md                        # Server-Monitoring, Einrichtung mit Docker beschrieben (nicht wirklich nötig)
+├── romm.md                           # Host Retro games und lassen sich im Browser spielen
+├── stromspareinstellungen.md         # Einrichtung für Stromsparmaßnahmen
 ├── glance.md                         # Dashboard für den server und leichtes Monitoring       
 └── tbd
