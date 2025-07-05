@@ -63,7 +63,7 @@ ssh-copy-id <benutzername>@<server-ip/Hostname>
 **Hinweis:**
 
 * `<benutzername>` = Benutzername des Servers 
-* `<server-ip>` = IP-Adresse aus Schritt 2 (z. B. `192.168.178.45`) oder Hostnamen nehmen
+* `<server-ip>` = IP-Adresse aus Schritt 2 (z. B. `192.168.178.25`) oder Hostnamen nehmen
 
 
 ### Variante B – Manuell
