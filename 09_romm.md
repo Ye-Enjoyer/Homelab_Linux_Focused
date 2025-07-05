@@ -6,6 +6,8 @@ ROMM (Retro Online Metadata Manager) ist ein selbst gehosteter ROM-Manager mit W
 
 ROMM läuft auf dem Homeserver als Docker-Container und ist lokal über [http://192.168.2.173:82](http://192.168.2.173:82) (IP ändern wenn nötig) erreichbar.
 
+Man Kann die Spiele über den Browser spielen oder auch Herunterladen und einen Lokalen Emulator verwenden. 
+
 ---
 
 ## Voraussetzungen
