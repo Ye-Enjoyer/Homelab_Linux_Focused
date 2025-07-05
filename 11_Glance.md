@@ -58,12 +58,12 @@ docker compose logs
               icon: /assets/romm.png
 
 
-        - type: bookmarks
+        - type: bookmarks #Alles anpassbar
           groups:
             - title: General
               links:
                 - title: Protonmail
-                  url: https://account.proton.me/mail
+                  url: https://account.proton.me/mail 
                 - title: Spotify
                   url: https://open.spotify.com/
                 - title: Github
