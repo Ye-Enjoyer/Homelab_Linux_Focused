@@ -4,7 +4,7 @@
 
 ROMM (Retro Online Metadata Manager) ist ein selbst gehosteter ROM-Manager mit Weboberfläche. Er dient als komfortabler Katalog für ROM-Dateien und bietet automatische Metadaten aus Quellen wie IGDB und Screenscraper.
 
-ROMM läuft auf dem Homeserver als Docker-Container und ist lokal über [http://192.168.2.173:82](http://192.168.2.173:82) erreichbar.
+ROMM läuft auf dem Homeserver als Docker-Container und ist lokal über [http://192.168.2.173:82](http://192.168.2.173:82) (IP ändern wenn nötig) erreichbar.
 
 ---
 
