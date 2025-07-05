@@ -52,7 +52,7 @@ docker compose logs
           sites:
             - title: Nextcloud
               url: https://bataraycloud.duckdns.org/login #ändern
-              icon: /assets/nextcloud.png
+              icon: /assets/nextcloud.png #Icons muss man manuell herunterladen und in einem Verzeichniss ablegen
             - title: Romm
               url: http://192.168.2.173:82/ #Ggf. ändern
               icon: /assets/romm.png
