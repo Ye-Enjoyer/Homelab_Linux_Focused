@@ -50,4 +50,4 @@ docker --version
 docker compose version
 ```
 
-> Sollte die Aktuellen Versionen von Docker & Docker Compose v2 zeigen
+> Sollte die Aktuellen Versionen von Docker & Docker Compose zeigen
