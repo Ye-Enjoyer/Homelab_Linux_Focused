@@ -51,10 +51,10 @@ docker compose logs
           title: Services
           sites:
             - title: Nextcloud
-              url: https://bataraycloud.duckdns.org/login
+              url: https://bataraycloud.duckdns.org/login #ändern
               icon: /assets/nextcloud.png
             - title: Romm
-              url: http://192.168.2.173:82/
+              url: http://192.168.2.173:82/ #Ggf. ändern
               icon: /assets/romm.png
 
 
