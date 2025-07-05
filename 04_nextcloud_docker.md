@@ -117,3 +117,7 @@ Nach wenigen Minuten ist Nextcloud einsatzbereit.
 * MariaDB-Daten liegen in: `/mnt/nextcloud-data/db/`
 
 ---
+
+## Bild Nextcloud
+
+![image](https://github.com/user-attachments/assets/b3433c91-0639-4903-88a5-b66d5958ec7f)
