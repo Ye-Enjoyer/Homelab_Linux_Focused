@@ -86,4 +86,9 @@ docker compose logs
                   url: https://www.instagram.com/
 
 
-![alt text](http://url/to/img.png)
+```
+## Beispiel Design
+
+
+![alt text](https://github.com/user-attachments/assets/5e4ab100-980a-4297-bee0-dab0919e9529)
+
