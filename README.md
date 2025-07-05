@@ -74,8 +74,8 @@ sudo ufw enable
 
 ```plaintext
 .
+├── README.md                         # Projektübersicht und Zielbeschreibung,
 ├── Bilder                            # Bilder für Visual Sneak Peek
-├── README.md                         # Projektübersicht und Zielbeschreibung, 
 ├── ssh_setup.md                      # Detaillierte Anleitung zur SSH-Einrichtung und ufw Install
 ├── auto_updates.md                   # Automatisierte Wartung/Updates
 ├── docker_docker-compose_setup.md    # Docker/Docker-Compose Installation
