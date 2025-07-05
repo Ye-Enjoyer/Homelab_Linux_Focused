@@ -11,7 +11,7 @@ Diese Dokumentation ist für ein privaten Homeserver auf Basis eines Intel NUC m
 ## Systemübersicht
 
 - Hardware: Intel NUC
-- Betriebssystem: Ubuntu Server 22.04 (barebones)
+- Betriebssystem: Ubuntu Server (barebones)
 - Netzwerk:
   - Server über LAN an TP-Link Switch
   - Switch angebunden per Powerline an Router im Keller
