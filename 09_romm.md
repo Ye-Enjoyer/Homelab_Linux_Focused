@@ -184,6 +184,7 @@ http://192.168.2.173:82
 
 ---
 
-## Bild vin ROMM GUI
+## Bild von ROMM GUI
 
-![alt text] 
+![alt text] ![image](https://github.com/user-attachments/assets/8dbc4b45-fb22-426c-9642-acd08f89d094)
+
