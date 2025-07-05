@@ -74,6 +74,7 @@ sudo ufw enable
 
 ```plaintext
 .
+├── Bilder                            # Bilder für Visual Sneak Peek
 ├── README.md                         # Projektübersicht und Zielbeschreibung, 
 ├── ssh_setup.md                      # Detaillierte Anleitung zur SSH-Einrichtung und ufw Install
 ├── auto_updates.md                   # Automatisierte Wartung/Updates
